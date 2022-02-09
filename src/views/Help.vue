@@ -1,11 +1,18 @@
 <template>
   <div class="our-help">
-    <h1>This is an an Help page</h1>
-    <p>How are you how can we help you ?</p>
+    <h1>{{ pageName }}</h1>
+    <p>{{ pageDescription }}</p>
   </div>
 </template>
+
 <script>
 export default {
+  data: function () {
+    return {
+      pageName: "Help Us",
+      pageDescription: "This is the Help us page",
+    };
+  },
   name: "help",
 };
 </script>
