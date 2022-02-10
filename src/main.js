@@ -9,6 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./scss/main.scss";
 import "normalize.css";
 
+import "./filters"; // Global Filters
+
 Vue.config.productionTip = false;
 
 new Vue({

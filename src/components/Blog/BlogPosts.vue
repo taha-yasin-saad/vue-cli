@@ -1,17 +1,17 @@
 <template>
   <div class="post-box">
     <span class="post-views">{{ views }}</span>
-    <h3 class="post-title">{{ title }}</h3>
+    <h3 class="post-title">{{ title | reversing }}</h3>
     <span class="post-date">{{ date }}</span>
     <p class="post-content">
-      {{ content }}
+      {{ content | shorten(10, " More") | reversing | uppercase }}
     </p>
     <div class="row">
       <div class="col-sm-6">
         <span class="post-auther">{{ author }}</span>
       </div>
       <div class="col-sm-6 text-right">
-        <span class="post-category">{{ category }}</span>
+        <span class="post-category">{{ category | uppercase }}</span>
       </div>
     </div>
   </div>
